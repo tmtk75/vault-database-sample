@@ -1,0 +1,5 @@
+.*.swp
+vault-data
+vault-keys
+.vault-env
+vault-*-lease.json

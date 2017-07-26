@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  mysql:
+    container_name: mysqld
+    image: mysql
+    ports:
+      - "3306:3306"
+    network_mode: bridge
+    #networks:
+    #  - my_network
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: foo
+      MYSQL_PASSWORD: abc123
+      MYSQL_ROOT_PASSWORD: verysecret
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    network_mode: bridge
+    #networks:
+    #  - my_network
+    environment:
+      POSTGRES_PASSWORD: abc123
+
+#networks:
+#  my_network: {}
