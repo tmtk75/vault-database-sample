@@ -1,4 +1,6 @@
 # README
+A playground for database secret backend of vault.
+https://www.vaultproject.io/docs/secrets/databases/index.html
 
 Required commands
 * vault
